@@ -1,0 +1,16 @@
+platform :ios, '8.0'
+
+def shared_pods
+  pod 'AdobeMobileSDK', '4.8.0', :inhibit_warnings => true
+  pod 'AFNetworking', '2.6.3', :inhibit_warnings => true
+end
+
+target 'iOSDevTest' do
+  shared_pods
+end
+
+target 'iOSDevTestTests' do
+end
+
+link_with 'iOSDevTest', 'iOSDevTestTests'
+ENV["COCOAPODS_DISABLE_STATS"] = "true"
