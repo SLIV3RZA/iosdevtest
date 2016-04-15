@@ -1,5 +1,6 @@
 language: objective-c
 before_install:
+    - rvm use system
     - brew install keith/formulae/cocoapods
     - gem install slather --no-rdoc --no-ri --no-document --quiet
     - pod update
