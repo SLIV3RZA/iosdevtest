@@ -12,5 +12,4 @@ end
 target 'iOSDevTestTests' do
 end
 
-link_with 'iOSDevTest', 'iOSDevTestTests'
 ENV["COCOAPODS_DISABLE_STATS"] = "true"
